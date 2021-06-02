@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --orange: #ffa500;
+    --black: #000000;
+    --white: #ffffff;
+    --eerie-black: #161616;
+    --very-light-shade-of-gray: #dddddd;
+    --light-shade-of-gray: #d2d2d2;
+    --contessa: #da8282;
+    --medium-light-shade-of-red: #da8282;
+    --medium-dark-shade-of-orange: #875632;
+    --medium-light-shade-of-gray: #999;
+    --medium-dark-shade-of-blue-magenta: #421987;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--light-shade-of-gray);
+}
+
+header {
+    background: var(--contessa);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex-basis: 50%;
+    align-items: center;
+    width: 21rem;
+    font-size: 1.5rem;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid var(--black);
+    background: -webkit-linear-gradient(top, var(--light-shade-of-gray), var(--very-light-shade-of-gray));
+    cursor: pointer;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.display {
+    color: var(--white);
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--eerie-black);
+    border: 1px solid var(--black);
+    font-size: 2em;
+}
+
+.operator, .negative, .equals {
+    background: var(--orange);
+    color: var(--black);
+}
+
+.tujuh, .delapan, .sembilan {
+    background: var(--medium-light-shade-of-red);
+    color: var(--black);
+}
+
+.empat, .lima, .enam {
+    background: var(--medium-dark-shade-of-orange);
+    color: var(--white);
+}
+
+.satu, .dua, .tiga {
+    background: var(--medium-light-shade-of-gray);
+}
+
+.clear {
+    background: var(--medium-dark-shade-of-blue-magenta);
+    color: var(--white);
+}
+
+.nol {
+    background: #537;
+    color: var(--white);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 var(--black);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 513px) {
+    header {
+        font-size: 1.2rem;
+        width: 17.5rem;
+    }
+
+    .button {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .button {
+        padding: 3px;
+    }
+}
